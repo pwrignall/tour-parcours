@@ -73,7 +73,7 @@ const stages_data = {
   }
 };
 
-const currentTime = new Date();
+const currentTime = new Date(stages_data["stage-01"].date);
 const tzInfoParagraph = document.getElementById("tz-info");
 tzInfoParagraph.textContent += `${currentTime
   .toLocaleTimeString("en-GB", {
