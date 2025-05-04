@@ -30,7 +30,7 @@ body {
     content: ' km';
 }
 
-.type[data-type="individual-time-trial"]::before {
+.type[data-type="team-time-trial"]::before {
     content: '⏱️ ';
 }
 
