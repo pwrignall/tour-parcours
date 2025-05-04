@@ -47,7 +47,7 @@ body {
 }
 
 .type[data-type="lumpy"]::before {
-    content: '🦖 ';
+    content: '🐫 ';
 }
 
 .type[data-type="mountain"]::before {
