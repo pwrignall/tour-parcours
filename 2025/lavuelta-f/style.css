@@ -104,7 +104,7 @@ path.profile-area {
     justify-content: space-between;
 }
 .done {
-    opacity: .3;
+    opacity: 0.6;
 }
 
 header {
