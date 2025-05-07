@@ -27,7 +27,7 @@ const stages_data = {
     distance: 131.60750356774275,
     up: 1131.0,
     down: -1009.0,
-    type: "Lumpy",
+    type: "Flat",
   },
   "stage-04": {
     name: "Etapa 4",
@@ -52,12 +52,22 @@ const stages_data = {
   "stage-06": {
     name: "Etapa 6",
     date: "2025-05-09T11:05:00+0200",
-    finish: "202-07-09T12:30:00+0200",
+    finish: "2024-07-09T12:30:00+0200",
     location: "Becerril de Campos to Baltan\u00e1s",
     distance: 126.88619165158478,
     up: 754.0,
     down: -743.0,
     type: "Flat",
+  },
+  "stage-07": {
+    name: "Etapa 7",
+    date: "2025-05-10T10:00:00+0200",
+    finish: "2024-07-09T12:30:00+0200",
+    location: "La Robla to Alto de Cotobello.Asturias",
+    distance: 153.0005652650534,
+    up: 2877.0,
+    down: -2648.0,
+    type: "Mountain",
   },
 };
 
