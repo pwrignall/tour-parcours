@@ -203,6 +203,7 @@ footer a:visited {
 
 .rest {
     background-color: light-dark(var(--bg-color), var(--fg-color));
+    text-align: center;
 }
 
 @media screen and (min-width: calc(500px + 3rem)) {

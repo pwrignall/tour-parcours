@@ -272,7 +272,7 @@ Object.keys(stages_data).forEach((stageKey) => {
         month: "short",
         day: "numeric",
       })
-      .replace(",", "")}`;
+      .replaceAll(",", "")}`;
     stageFinish = new Date(stageStart.getTime() + 12 * 60 * 60 * 1000);
   } else {
     stageHeader.textContent += ` : ${stageStart
@@ -283,18 +283,20 @@ Object.keys(stages_data).forEach((stageKey) => {
         hour: "numeric",
         minute: "numeric",
       })
-      .replace(",", "")}`;
+      .replaceAll(",", "")}`;
   }
-  const stageStartTz = document.createElement("span");
-  stageStartTz.className = "tz";
-  stageStartTz.textContent = `${stageStart
-    .toLocaleTimeString("en-GB", {
-      hour: "numeric",
-      minute: "numeric",
-      timeZoneName: "short",
-    })
-    .slice(5)}`;
-  stageHeader.appendChild(stageStartTz);
+  if (!stageKey.startsWith("rest")) {
+    const stageStartTz = document.createElement("span");
+    stageStartTz.className = "tz";
+    stageStartTz.textContent = `${stageStart
+      .toLocaleTimeString("en-GB", {
+        hour: "numeric",
+        minute: "numeric",
+        timeZoneName: "short",
+      })
+      .slice(5)}`;
+    stageHeader.appendChild(stageStartTz);
+  }
   topElems.appendChild(stageHeader);
   if (
     currentTime.getTime() > stageFinish.getTime() + 60 * 60 * 1000 &&
