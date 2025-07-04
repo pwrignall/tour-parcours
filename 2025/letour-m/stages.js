@@ -260,6 +260,16 @@ Object.keys(stages_data).forEach((stageKey) => {
 
   const stageHeader = document.createElement("h2");
   stageHeader.textContent = stages_data[stageKey].name;
+  if (stageKey.startsWith("rest")) {
+    stageHeader.textContent += ` : ${stageStart
+      .toLocaleDateString("en-GB", {
+        weekday: "short",
+        month: "short",
+        day: "numeric",
+      })
+      .replaceAll(",", "")}`;
+    stageFinish = new Date(stageStart.getTime() + 12 * 60 * 60 * 1000);
+  } else {
   stageHeader.textContent += ` : ${stageStart
     .toLocaleDateString("en-GB", {
       weekday: "short",
@@ -268,7 +278,9 @@ Object.keys(stages_data).forEach((stageKey) => {
       hour: "numeric",
       minute: "numeric",
     })
-    .replace(",", "")}`;
+      .replaceAll(",", "")}`;
+  }
+  if (!stageKey.startsWith("rest")) {
   const stageStartTz = document.createElement("span");
   stageStartTz.className = "tz";
   stageStartTz.textContent = `${stageStart
@@ -278,12 +290,8 @@ Object.keys(stages_data).forEach((stageKey) => {
       timeZoneName: "short",
     })
     .slice(5)}`;
-  if (stageKey.startsWith("rest")) {
-    stageStartTz.textContent = "";
-    stageHeader.textContent = stageHeader.textContent.slice(0, -6);
-    stageFinish = new Date(stageStart.getTime() + 12 * 60 * 60 * 1000);
+    stageHeader.appendChild(stageStartTz);
   }
-  stageHeader.appendChild(stageStartTz);
   topElems.appendChild(stageHeader);
   if (
     currentTime.getTime() > stageFinish.getTime() + 60 * 60 * 1000 &&
@@ -313,7 +321,7 @@ Object.keys(stages_data).forEach((stageKey) => {
         p.textContent = `${stageInfo[key]}`;
         stageInfoDiv.appendChild(p);
       }
-      if (!["rest-01", "rest-02"].includes(stageKey)) {
+      if (!stageKey.startsWith("rest")) {
         bottomElems.appendChild(profileDiv);
         stageInfoDiv.appendChild(eta);
       }
