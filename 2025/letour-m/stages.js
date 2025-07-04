@@ -15,7 +15,7 @@ const stages_data = {
     distance: 208.8996412423296,
     up: 1905.0,
     down: -1878.0,
-    type: "Hilly",
+    type: "Lumpy",
   },
   "stage-03": {
     name: "\u00c9tape 3",
@@ -33,7 +33,7 @@ const stages_data = {
     distance: 173.78588865160285,
     up: 1659.0,
     down: -1677.0,
-    type: "Hilly",
+    type: "Lumpy",
   },
   "stage-05": {
     name: "\u00c9tape 5",
@@ -87,7 +87,7 @@ const stages_data = {
     distance: 165.44947620063323,
     up: 4312.0,
     down: -3315.0,
-    type: "Mountain",
+    type: "Medium Mountain",
   },
   "rest-01": {
     name: "Rest day 1",
@@ -160,7 +160,7 @@ const stages_data = {
     distance: 160.55519365018728,
     up: 1592.0,
     down: -1511.0,
-    type: "Flat",
+    type: "Lumpy",
   },
   "stage-18": {
     name: "\u00c9tape 18",
@@ -240,7 +240,7 @@ Object.keys(stages_data).forEach((stageKey) => {
   } else if (stageKey === "stage-13") {
     etaValue += 261 * 60 * 1000;
   } else {
-    etaValue += 75654.7750 * distance + 720.2032 * elevation + -138987.3812;
+    etaValue += 75654.775 * distance + 720.2032 * elevation + -138987.3812;
   }
   let stageFinish = new Date(etaValue);
   eta.textContent = `${stageFinish.toLocaleTimeString("en-GB", {
@@ -278,9 +278,9 @@ Object.keys(stages_data).forEach((stageKey) => {
       timeZoneName: "short",
     })
     .slice(5)}`;
-  if (stageKey === "rest-01" || stageKey === "rest-02") {
+  if (stageKey.startsWith("rest")) {
     stageStartTz.textContent = "";
-    stageHeader.textContent = stageHeader.textContent.slice(0, -7);
+    stageHeader.textContent = stageHeader.textContent.slice(0, -6);
     stageFinish = new Date(stageStart.getTime() + 12 * 60 * 60 * 1000);
   }
   stageHeader.appendChild(stageStartTz);
