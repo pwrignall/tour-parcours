@@ -4,8 +4,8 @@
     --card-bg-color: hsl(180, 10%, 96%);
     --card-bg-color-dark: black;
     --bg-color: hsl(180, 10%, 92%);
-    --accent-color: rgb(255, 230, 90);
-    --fg-color: hsl(0, 0%, 5%);
+    --accent-color: rgb(215, 185, 14);
+    --fg-color: hsl(0, 0%, 8%);
     --link: rgb(9, 53, 119);
     --visited-link: rgb(98, 38, 105);
 }
@@ -199,6 +199,7 @@ footer a:visited {
 
 .rest {
     background-color: light-dark(var(--bg-color), var(--fg-color));
+    text-align: center;
 }
 
 @media screen and (min-width: calc(500px + 3rem)) {
