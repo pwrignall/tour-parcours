@@ -6,8 +6,8 @@
     --bg-color: hsl(180, 10%, 92%);
     --accent-color: rgb(14, 138, 215);
     --fg-color: hsl(0, 0%, 8%);
-    --link: rgb(87, 96, 22);
-    --visited-link: rgb(93, 26, 100);
+    --link: rgb(14, 16, 67);
+    --visited-link: rgb(60, 15, 65);
 }
 
 * {
@@ -170,7 +170,7 @@ h2 {
 
 footer {
     background-color: var(--accent-color);
-    color: light-dark(var(--bg-color), var(--fg-color));
+    color: black;
     text-align: center;
     padding: 0.5rem;
     font-size: 0.6rem;
