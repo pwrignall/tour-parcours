@@ -117,13 +117,7 @@ Object.keys(stages_data).forEach((stageKey) => {
   const distance = stageInfo.distance;
   const elevation = stageInfo.up;
 
-  if (stageKey === "stage-05") {
-    etaValue += 272 * 60 * 1000;
-  } else if (stageKey === "stage-13") {
-    etaValue += 261 * 60 * 1000;
-  } else {
-    etaValue += 75654.775 * distance + 720.2032 * elevation + -138987.3812;
-  }
+  etaValue += 75658.1904 * distance + 1484.9559 * elevation + -10175.2012;
   let stageFinish = new Date(etaValue);
   eta.textContent = `${stageFinish.toLocaleTimeString("en-GB", {
     hour: "numeric",
