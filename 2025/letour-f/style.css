@@ -4,7 +4,7 @@
     --card-bg-color: hsl(180, 10%, 96%);
     --card-bg-color-dark: black;
     --bg-color: hsl(180, 10%, 92%);
-    --accent-color: rgb(215, 185, 14);
+    --accent-color: hsl(46, 93%, 59%);
     --accent-color-dark: rgb(255, 230, 90);
     --fg-color: hsl(0, 0%, 8%);
     --link: rgb(9, 53, 119);
@@ -175,7 +175,7 @@ h2 {
 
 footer {
     background-color: light-dark(var(--accent-color), var(--accent-color-dark));
-    color: light-dark(var(--bg-color), var(--fg-color));
+    color: var(--fg-color);
     text-align: center;
     padding: 0.5rem;
     font-size: 0.6rem;
