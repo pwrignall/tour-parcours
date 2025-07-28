@@ -5,6 +5,7 @@
     --card-bg-color-dark: black;
     --bg-color: hsl(180, 10%, 92%);
     --accent-color: rgb(215, 185, 14);
+    --accent-color-dark: rgb(255, 230, 90);
     --fg-color: hsl(0, 0%, 8%);
     --link: rgb(9, 53, 119);
     --visited-link: rgb(98, 38, 105);
@@ -88,7 +89,7 @@ path.profile-line {
 }
 
 path.profile-area {
-    fill: var(--accent-color);
+    fill: light-dark(var(--accent-color), var(--accent-color-dark));
 }
 
 #stages {
@@ -112,7 +113,7 @@ path.profile-area {
 }
 
 header {
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid light-dark(var(--accent-color), var(--accent-color-dark));
     font-size: 0.6rem;
     background-color: light-dark(var(--bg-color), var(--fg-color));
     padding: 0.2rem 1rem;
@@ -125,14 +126,14 @@ header {
 h1 {
     font-family: "Satisfy", cursive;
     font-size: 1.2rem;
-    color: var(--accent-color);
+    color: light-dark(var(--accent-color), var(--accent-color-dark));
 }
 
 h2 {
     font-size: 0.8rem;
     text-align: center;
     text-transform: uppercase;
-    color: var(--accent-color);
+    color: light-dark(var(--accent-color), var(--accent-color-dark));
     padding: 0.3em;
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -149,7 +150,7 @@ h2 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: 0.3rem;
-    color: var(--accent-color);
+    color: light-dark(var(--accent-color), var(--accent-color-dark));
 }
 
 .profile {
@@ -173,7 +174,7 @@ h2 {
 }
 
 footer {
-    background-color: var(--accent-color);
+    background-color: light-dark(var(--accent-color), var(--accent-color-dark));
     color: light-dark(var(--bg-color), var(--fg-color));
     text-align: center;
     padding: 0.5rem;
