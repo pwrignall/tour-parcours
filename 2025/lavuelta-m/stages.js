@@ -137,7 +137,7 @@ const stages_data = {
     "distance": 167.94941431700084,
     "up": 2695.0,
     "down": -2419.0,
-    "type": "Medium Mountain"
+    "type": "Hilly"
   },
   "rest-02": {
     "name": "Rest day 2",
@@ -151,7 +151,7 @@ const stages_data = {
     "distance": 168.30257228089124,
     "up": 3006.0,
     "down": -2523.0,
-    "type": "Medium Mountain"
+    "type": "Hilly"
   },
   "stage-17": {
     "name": "Etapa 17",
