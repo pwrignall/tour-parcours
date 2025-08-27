@@ -7,7 +7,9 @@
     --accent-color: rgb(179, 12, 0);
     --fg-color: hsl(0, 0%, 8%);
     --link: rgb(9, 53, 119);
+    --link-contrast: rgb(128, 179, 255);
     --visited-link: rgb(98, 38, 105);
+    --visited-link-contrast: rgb(242, 128, 255);
 }
 
 * {
@@ -169,8 +171,8 @@ h2 {
 }
 
 footer {
-    background-color: var(--accent-color);
-    color: light-dark(var(--bg-color), var(--fg-color));
+    border-top: 2px solid var(--accent-color);
+    color: light-dark(var(--fg-color), var(--bg-color));
     text-align: center;
     padding: 0.5rem;
     font-size: 0.6rem;
@@ -178,11 +180,11 @@ footer {
 }
 
 footer a {
-    color: var(--link);
+    color: light-dark(var(--link), var(--link-contrast));
 }
 
 footer a:visited {
-    color: var(--visited-link);
+    color: light-dark(var(--visited-link), var(--visited-link-contrast));
 }
 
 .tz {
