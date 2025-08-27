@@ -134,10 +134,10 @@ const stages_data = {
     "name": "Etapa 15",
     "date": "2025-09-07T13:05:00+0200",
     "location": "A Veiga/Vegadeo to Monforte de Lemos",
-    "distance": "0",
-    "up": "0",
-    "down": "0",
-    "type": "Medium Mountain"
+    "distance": 167.94941431700084,
+    "up": 2695.0,
+    "down": -2419.0,
+    "type": "Hilly"
   },
   "rest-02": {
     "name": "Rest day 2",
@@ -148,54 +148,54 @@ const stages_data = {
     "name": "Etapa 16",
     "date": "2025-09-09T13:05:00+0200",
     "location": "Poio to Mos.Castro de Herville",
-    "distance": "0",
-    "up": "0",
-    "down": "0",
-    "type": "Medium Mountain"
+    "distance": 168.30257228089124,
+    "up": 3006.0,
+    "down": -2523.0,
+    "type": "Hilly"
   },
   "stage-17": {
     "name": "Etapa 17",
     "date": "2025-09-10T13:30:00+0200",
     "location": "O Barco de Valdeorras to Alto de El Morredero",
-    "distance": "0",
-    "up": "0",
-    "down": "0",
+    "distance": 143.4250430814486,
+    "up": 2894.0,
+    "down": -1577.0,
     "type": "Medium Mountain"
   },
   "stage-18": {
     "name": "Etapa 18",
     "date": "2025-09-11T13:12:00+0200",
     "location": "Valladolid to Valladolid",
-    "distance": "0",
-    "up": "0",
-    "down": "0",
+    "distance": 27.221148034544285,
+    "up": 111.0,
+    "down": -108.0,
     "type": "Individual Time Trial"
   },
   "stage-19": {
     "name": "Etapa 19",
     "date": "2025-09-12T13:50:00+0200",
     "location": "Rueda to Guijuelo",
-    "distance": "0",
-    "up": "0",
-    "down": "0",
+    "distance": 162.08775126617866,
+    "up": 960.0,
+    "down": -708.0,
     "type": "Flat"
   },
   "stage-20": {
     "name": "Etapa 20",
     "date": "2025-09-13T13:00:00+0200",
     "location": "Robledo de Chavela to Bola del Mundo. Puerto de Navacerrada",
-    "distance": "0",
-    "up": "0",
-    "down": "0",
+    "distance": 165.2857321483836,
+    "up": 3796.0,
+    "down": -2391.0,
     "type": "Mountain"
   },
   "stage-21": {
     "name": "Etapa 21",
     "date": "2025-09-14T16:40:00+0200",
     "location": "Alalpardo to Madrid",
-    "distance": "0",
-    "up": "0",
-    "down": "0",
+    "distance": 107.54928124641923,
+    "up": 835.0,
+    "down": -856.0,
     "type": "Flat"
   }
 };
