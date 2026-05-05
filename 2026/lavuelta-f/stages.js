@@ -6,7 +6,7 @@ const stages_data = {
     "distance": 113.92185882319168,
     "up": 1791.8,
     "down": -1778.9999999999973,
-    "type": "Hilly"
+    "type": "Lumpy"
   },
   "stage-02": {
     "name": "Etapa 2",
@@ -24,7 +24,7 @@ const stages_data = {
     "distance": 121.217251604839,
     "up": 1894.7999999999986,
     "down": -1880.699999999997,
-    "type": "Flat"
+    "type": "Lumpy"
   },
   "stage-04": {
     "name": "Etapa 4",
