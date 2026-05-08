@@ -1,7 +1,7 @@
 const stages_data = {
   "stage-01": {
     "name": "Tappa 1",
-    "date": "2026-05-08T14:00:00+0300",
+    "date": "2026-05-08T14:00:00+0200",
     "location": "Nesebar (BG) to Burgas (BG)",
     "distance": 146.5998430738015,
     "up": 596.2999999999998,
@@ -10,7 +10,7 @@ const stages_data = {
   },
   "stage-02": {
     "name": "Tappa 2",
-    "date": "2026-05-09T12:05:00+0300",
+    "date": "2026-05-09T12:05:00+0200",
     "location": "Burgas (BG) to Veliko Tarnovo (BG)",
     "distance": 221.162460999689,
     "up": 2162.7000000000003,
@@ -19,12 +19,12 @@ const stages_data = {
   },
   "stage-03": {
     "name": "Tappa 3",
-    "date": "2026-05-10T13:15:00+0300",
+    "date": "2026-05-10T13:15:00+0200",
     "location": "Plovdiv (BG) to Sofia (BG)",
     "distance": 175.0082417853649,
     "up": 1312.9600000000005,
     "down": -930.5000000000001,
-    "type": "Flat"
+    "type": "Lumpy"
   },
   "rest-01": {
     "name": "Rest day 1",
@@ -38,7 +38,7 @@ const stages_data = {
     "distance": 138.35004189750464,
     "up": 1361.62,
     "down": -1210.58,
-    "type": "Flat"
+    "type": "Lumpy"
   },
   "stage-05": {
     "name": "Tappa 5",
@@ -74,7 +74,7 @@ const stages_data = {
     "distance": 155.5854684596053,
     "up": 1574.8300000000002,
     "down": -1340.9799999999996,
-    "type": "Hilly"
+    "type": "Lumpy"
   },
   "stage-09": {
     "name": "Tappa 9",
@@ -174,7 +174,7 @@ const stages_data = {
     "distance": 168.12733431185003,
     "up": 1682.9399999999998,
     "down": -1826.9599999999996,
-    "type": "Flat"
+    "type": "Lumpy"
   },
   "stage-19": {
     "name": "Tappa 19",
