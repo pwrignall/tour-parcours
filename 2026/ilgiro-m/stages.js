@@ -115,7 +115,7 @@ const stages_data = {
     "distance": 175.12101299932147,
     "up": 2215.8900000000017,
     "down": -2038.4100000000012,
-    "type": "Flat"
+    "type": "Lumpy"
   },
   "stage-13": {
     "name": "Tappa 13",
