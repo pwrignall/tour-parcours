@@ -6,7 +6,7 @@ const stages_data = {
     distance: 138.27978485308364,
     up: 1152.0,
     down: -1267.0,
-    type: "Flat",
+    type: "Lumpy",
   },
   "stage-02": {
     name: "\u00c9tape 2",
@@ -15,7 +15,7 @@ const stages_data = {
     distance: 150.79968404965274,
     up: 1259.0,
     down: -1265.0,
-    type: "Flat",
+    type: "Lumpy",
   },
   "stage-03": {
     name: "\u00c9tape 3",
